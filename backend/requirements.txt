@@ -1,0 +1,38 @@
+# FastAPI + Server
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# Groq LLM & Whisper STT
+groq==0.15.0
+
+# Supabase (vector DB + auth)
+supabase==2.11.0
+
+# Embeddings via Ollama
+httpx==0.28.1
+
+# PDF parsing
+PyMuPDF==1.25.3
+
+# Web scraping
+firecrawl-py==1.11.1
+
+# Text chunking
+langchain-text-splitters==0.3.5
+tiktoken==0.8.0
+
+# Cohere re-ranking
+cohere==5.13.4
+
+# Server-Sent Events streaming
+sse-starlette==2.2.1
+
+# Environment variables
+python-dotenv==1.0.1
+
+# CORS middleware (included in fastapi/starlette)
+# Async support
+anyio==4.8.0

@@ -123,13 +123,13 @@ async def root() -> dict[str, str]:
 
 
 # ──────────────────────────────────────────────
-# Register Routers (will be added in Phase 2 & 3)
+# Register Routers
 # ──────────────────────────────────────────────
-# Uncomment these as the routers are built:
-# from routers.ingest import router as ingest_router
-# from routers.chat import router as chat_router
-# from routers.knowledge import router as knowledge_router
-#
-# app.include_router(ingest_router, prefix="/ingest", tags=["Ingestion"])
-# app.include_router(chat_router, prefix="/chat", tags=["Chat"])
-# app.include_router(knowledge_router, prefix="/knowledge", tags=["Knowledge"])
+from routers.ingest import router as ingest_router
+from routers.chat import router as chat_router
+from routers.knowledge import router as knowledge_router
+
+app.include_router(ingest_router, prefix="/ingest", tags=["Ingestion"])
+app.include_router(chat_router, prefix="/chat", tags=["Chat"])
+app.include_router(knowledge_router, prefix="/knowledge", tags=["Knowledge"])
+
